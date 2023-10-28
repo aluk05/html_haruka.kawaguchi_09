@@ -1,0 +1,579 @@
+/* ここから下に記載していく */
+
+@charset "UTF-8";
+html {
+    font-size: 100%;
+    /* スムーズにスクロールするコードを追加 */
+    scroll-behavior: smooth;
+}
+
+/* フォントの読み込み */
+@import url('https://fonts.google.com/specimen/Quicksand');
+
+@import url('https://fonts.google.com/specimen/Zen+Maru+Gothic?subset=japanese');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto 130px auto;
+    font-size: 16px;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.site-logo {
+    line-height: 1px;
+}
+
+.site-logo a {
+    display: block;
+}
+
+.sec-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* ボタンデザインは冒頭でコードを入れ込む */
+/* ボタンデザイン一旦これは据え置き */
+/* .btn {
+    color: #ffd61a;
+    border: solid 1px #ffd61a;
+    background-color: #ffd61a;
+    display: inline-block;
+    color:white;
+    font-size: 18px;
+    padding: 30px 150px;
+    margin-top: 30px;
+} */
+
+/* 新しいボタンデザインをいじってみる→完成したのでこっちでいく */
+.btn {
+    border: 5px solid transparent;
+    background: #ffd61a;
+    color: #fbf9f5;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 200px;
+    transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    text-indent: 23px;
+    font-weight: bold;
+}
+
+.btn span {
+    display: inline-block;
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+}
+
+.btn:hover {
+    text-indent: 0;
+    background: #706755;
+    color: #FFE8A3;
+    width: 250px;
+    border: 10px solid #c7cc8df5;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover span {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+.header {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 121px;
+    margin: auto;
+}
+
+.header ul {
+    display: flex;
+    padding: 10px 0;
+}
+
+.header li {
+    font-size: 21px;
+    margin-left: 50px;
+}
+
+.header li a {
+    color: #24292e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header li a:hover {
+    opacity: 0.7;
+}
+
+/*-------------------------------------------
+キービジュアル
+-------------------------------------------*/
+
+.keyvisual {
+    margin-bottom: 60px;
+}
+
+.keyvisual img {
+    margin: auto;
+    display: block;
+    width: 1200px;
+    max-width: 1920px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.box{
+    position: relative;
+}
+
+.a{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+
+.sec-title-yellow {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #ffd61a;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.about-cheese{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+.about-cheese-1{
+    margin-bottom: 60px;
+}
+
+.about-cheese-2{
+    margin-bottom: 30px;
+}
+
+.about-cheese-3{
+    margin-bottom: 40px;
+}
+
+.about-cheese-4{
+    margin-bottom:  40px;
+}
+
+.about-cheese-5{
+    margin-bottom: 80px;
+}
+
+.flex{
+    display: flex;
+}
+
+/*-------------------------------------------
+COURSE
+-------------------------------------------*/
+
+.sec-title-course{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.course-content{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    margin-bottom: 60px; 
+    padding-top: 30px;
+}
+
+.item{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+.sec-title-black{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.flex-course{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.flex-course:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img-course{
+    width: 600px;
+}
+
+.course-text{
+    width: 480px;
+    padding-left: 50px;
+}
+
+/*-------------------------------------------
+NEWS
+-------------------------------------------*/
+.ja{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+#NEWS{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.news-date{
+    padding-top: 30px;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.news-content{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+/* NEWS部分どこを押してもHOVERデザインがつく */
+
+.news-img{
+    position:relative;
+	top:0;
+}
+
+.news-img:hover{
+	top:-10px;
+	transition:0.3s;
+}
+
+.news-date{
+    color:#222222;
+    font-size: 120%;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.news-date:hover{
+    color:#978b08ba
+}
+
+.news-content:hover{
+    color:#978b08ba
+}
+
+.news-content {
+    color:#222222;
+    font-size: 120%;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+
+
+
+/*-------------------------------------------
+ACCESS
+-------------------------------------------*/
+
+#ACCESS{
+    background-color: #fafafa;
+
+}
+
+.sec-title-black-acess{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 60px;
+}
+
+.map{
+    padding-top: 60px;
+
+}
+
+.company-info{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    font-size: 18px;
+    padding-top: 60px;
+}
+
+#ACCESS dl{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ACCESS dt {
+    width: 20%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ACCESS dd {
+    width: 60%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*-------------------------------------------
+CONTACT
+-------------------------------------------*/
+
+#CONTACT{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    margin-bottom: 60px; 
+    padding-top: 30px;
+}
+
+.contact-2{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Maru Gothic', serif;
+    margin-bottom: 70px; 
+}
+
+/* 問い合わせフォームのデザインコード */
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #f2f4f5;
+}
+
+.form-row:last-child {
+    border-bottom: none;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.form-label span {
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f79809d7;
+}
+  /* フォームパーツのデザイン */
+  input, textarea {
+    background-color: #f2f4f5;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+select {
+    background-color: #f2f4f5;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 今回はアニメーションの入ったボタンを使うのでこれはなし */
+/* button {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 30px 150px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ffd61a;
+} */
+
+
+/* チェックボックスのコード */
+
+.checknox-wrap{
+    display:block !important;
+    margin-bottom:0.5em;
+    display:flex;
+    flex-flow: column;
+    border:none;
+    height:24px;
+    margin:0 0 1em;
+    text-align: left;
+    padding: 12px 8px;
+    cursor: pointer;
+}
+
+.checkbox-input{
+    margin: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.checkbox-input:focus + .CheckboxInput-DummyInput{
+    border: dashed 2px #333333;
+}
+
+.checkbox-input:checked + .CheckboxInput-DummyInput {
+    background: #333333;
+}
+
+.checkbox-input:checked + .CheckboxInput-DummyInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translate(-6px, 5px) rotateZ(-135deg);
+    transform-origin: 2px 2px;
+    background: #FFFFFF;
+}
+
+.checkbox-input:checked + .CheckboxInput-DummyInput::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 76%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translate(-6px, 5px) rotateZ(-45deg);
+    transform-origin: 2px 2px;
+    background: #FFFFFF;
+}
+
+.CheckboxInput-DummyInput {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border: solid 2px transparent;
+    background: rgba(0,0,0, .1);
+    border-radius: 4px;
+}
+
+.CheckboxInput-LabelText {
+    font-size: 16px;
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+    bottom: 25px;
+}
+
+/*-------------------------------------------
+FOOTER
+-------------------------------------------*/
+#footer{
+    background-color: #707070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
